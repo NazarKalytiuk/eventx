@@ -19,7 +19,10 @@ jobs:
                 command: npm run e2e
             - run:
                 name: Build
-                command: npm run build
+                command: npm run build.github
+            - run:
+                name: Deply
+                commang: npm run deploy.github
 workflows:
   version: 2
   build-deploy:
