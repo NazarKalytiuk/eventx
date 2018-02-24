@@ -13,11 +13,8 @@ jobs:
                 command: npm run build.github
             - run:
                 name: Deploy
-                command: |
-                  git config --global user.email "$GH_EMAIL"
-                  git config --global user.name "$GH_NAME"
-                  ./node_modules/.bin/ngh
-                  echo "Finished Deployment!"
+                command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+                working_directory: dist
 
 workflows:
   version: 2
