@@ -10,8 +10,7 @@
     "test.prod": "ng test -sr --progress false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build.github": "ng build --prod --base-href='https://nazarkalytiuk.github.io/eventx/'",
-    "deploy.github": "ngh"
+    "build.github": "ng build --prod"
   },
   "private": true,
   "dependencies": {
