@@ -16,7 +16,7 @@ jobs:
                 command: |
                   git config --global user.email "$GH_EMAIL"
                   git config --global user.name "$GH_NAME"
-                  npm run deploy.github
+                  ./node_modules/.bin/ngh
                   echo "Finished Deployment!"
 
 workflows:
